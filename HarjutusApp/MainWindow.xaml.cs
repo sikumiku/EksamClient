@@ -50,11 +50,26 @@ namespace HarjutusApp
                 Firstname = txtFirstname.Text,
                 Lastname = txtLastname.Text,
                 Birthday = txtBirthday.Text,
-                IdCode = txtIdCode.Text
+                IdCode = txtIdCode.Text,
+                RoleId = GetRoleId(PersonRole.Text)
             };
 
             _vm.AddNewPerson(p);
 
+        }
+
+        private int GetRoleId (string role)
+        {
+            switch (role)
+            {
+                case "Objektijuht":
+                    return 1;
+                case "Tööline":
+                        return 2;
+                case "Õpipoiss":
+                    return 3;
+            }
+            return 0;
         }
 
         private void Person_Put_Click(object sender, RoutedEventArgs e)
@@ -80,20 +95,20 @@ namespace HarjutusApp
         }
         #endregion
         #region CarActions
-        private void Car_Post_Click(object sender, RoutedEventArgs e)
-        {
-            var car = new Car
-            {
-                ManufactureYear = txtManufactureYear.Text,
-                CarBrand = txtCarBrand.Text,
-                CarModel = txtCarModel.Text,
-                LicensePlate = txtLicensePlate.Text,
-                PersonId = int.Parse(txtCarAddPersonId.Text)
-            };
+        //private void Car_Post_Click(object sender, RoutedEventArgs e)
+        //{
+        //    var car = new Car
+        //    {
+        //        ManufactureYear = txtManufactureYear.Text,
+        //        CarBrand = txtCarBrand.Text,
+        //        CarModel = txtCarModel.Text,
+        //        LicensePlate = txtLicensePlate.Text,
+        //        PersonId = int.Parse(txtCarAddPersonId.Text)
+        //    };
 
-            _vm.AddNewCar(car);
+        //    _vm.AddNewCar(car);
 
-        }
+        //}
 
         private void Car_Put_Click(object sender, RoutedEventArgs e)
         {
@@ -112,10 +127,10 @@ namespace HarjutusApp
             _vm.RemoveCar(int.Parse(txtCarDeleteId.Text));
         }
 
-        private void Car_Search_Click(object sender, RoutedEventArgs e)
-        {
-            _vm.FindCars(txtLicensePlateLookup.Text);
-        }
+        //private void Car_Search_Click(object sender, RoutedEventArgs e)
+        //{
+        //    _vm.FindCars(txtLicensePlateLookup.Text);
+        //}
 
         private void PersonCar_Show_Click(object sender, RoutedEventArgs e)
         {
