@@ -14,7 +14,7 @@ namespace HarjutusApp.Models
         public string Birthday { get; set; }
         public string IdCode { get; set; }
         public int Age { get; set; }
-        public List<Car> Cars { get; set; }
+        public int RoleId { get; set; }
 
     }
 }
