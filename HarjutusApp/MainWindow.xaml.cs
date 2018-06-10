@@ -122,5 +122,10 @@ namespace HarjutusApp
             _vm.FindPersonCars(int.Parse(txtDisplayCarsByPersonId.Text));
         }
         #endregion
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

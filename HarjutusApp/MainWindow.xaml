@@ -11,7 +11,7 @@
             <ColumnDefinition Width="455"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ListBox ItemsSource="{Binding Persons}" HorizontalAlignment="Left" Height="149" Margin="10,84,0,0" VerticalAlignment="Top" Width="345" Grid.Column="1">
+        <ListBox ItemsSource="{Binding Persons}" HorizontalAlignment="Left" Height="148" Margin="10,126,0,0" VerticalAlignment="Top" Width="345" Grid.Column="1">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
@@ -33,46 +33,31 @@
         <Label Content="ID kood" HorizontalAlignment="Left" Margin="229,84,0,0" VerticalAlignment="Top" Height="26" Width="52"/>
         <Label Content="Lisa inimesi" HorizontalAlignment="Left" Margin="22,15,0,0" VerticalAlignment="Top" FontSize="16" Height="31" Width="90"/>
         <TextBox x:Name="txtLastname" HorizontalAlignment="Left" Height="23" Margin="290,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Lisa inimene" HorizontalAlignment="Left" Margin="119,170,0,0" VerticalAlignment="Top" Width="192" Height="20" Click="Person_Post_Click"/>
+        <Button Content="Lisa inimene" HorizontalAlignment="Left" Margin="119,197,0,0" VerticalAlignment="Top" Width="192" Height="20" Click="Person_Post_Click"/>
         <Label Content="Inimesed" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Top" FontSize="16" Height="31" Width="90" Grid.Column="1"/>
-        <Label Content="Muutmise korral täpsusta inimese ID:" HorizontalAlignment="Left" Margin="22,126,0,0" VerticalAlignment="Top" Height="26" Width="208"/>
-        <TextBox x:Name="txtUpdatePersonId" HorizontalAlignment="Left" Height="23" Margin="235,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
-        <Button Content="Muuda andmeid" HorizontalAlignment="Left" Margin="304,127,0,0" VerticalAlignment="Top" Width="106" Height="20" Click="Person_Put_Click"/>
-        <Label Content="Halda inimesi" HorizontalAlignment="Left" Margin="22,202,0,0" VerticalAlignment="Top" FontSize="16" Height="31" Width="109"/>
-        <Button Content="Eemalda aktiivsete nimekirjast" HorizontalAlignment="Left" Margin="119,279,0,0" VerticalAlignment="Top" Width="192" Height="20" Click="Person_Deactivate_Click"/>
-        <Label Content="ID:" HorizontalAlignment="Left" Margin="163,238,0,0" VerticalAlignment="Top" Height="26" Width="31"/>
-        <Button Content="Kustuta jäädavalt" HorizontalAlignment="Left" Margin="119,315,0,0" VerticalAlignment="Top" Width="192" Height="20" Click="Person_Delete_Click"/>
-        <TextBox x:Name="txtDeletePersonId" HorizontalAlignment="Left" Height="23" Margin="199,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
-        <Label Content="Lisa auto" HorizontalAlignment="Left" Margin="22,352,0,0" VerticalAlignment="Top" FontSize="16" Height="31" Width="109"/>
-        <Label Content="Tootmisaasta" HorizontalAlignment="Left" Margin="22,393,0,0" VerticalAlignment="Top" Height="26" Width="85"/>
-        <TextBox x:Name="txtManufactureYear" HorizontalAlignment="Left" Height="23" Margin="112,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82"/>
-        <TextBox x:Name="txtCarBrand" HorizontalAlignment="Left" Height="23" Margin="112,424,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82"/>
-        <Label Content="Automudel" HorizontalAlignment="Left" Margin="229,393,0,0" VerticalAlignment="Top" Height="26" Width="82"/>
-        <Label Content="Automark" HorizontalAlignment="Left" Margin="22,424,0,0" VerticalAlignment="Top" Height="26" Width="85"/>
-        <TextBox x:Name="txtLicensePlate" HorizontalAlignment="Left" Height="23" Margin="317,424,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="93"/>
-        <Label Content="Numbrimärk" HorizontalAlignment="Left" Margin="229,421,0,0" VerticalAlignment="Top" Height="26" Width="78"/>
-        <TextBox x:Name="txtCarModel" HorizontalAlignment="Left" Height="23" Margin="317,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="93"/>
-        <Label Content="Auto lisamiseks täpsusta omaniku ID:" HorizontalAlignment="Left" Margin="22,463,0,0" VerticalAlignment="Top" Height="26" Width="208"/>
-        <TextBox x:Name="txtCarAddPersonId" HorizontalAlignment="Left" Height="23" Margin="235,463,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
-        <Button Content="Lisa auto" HorizontalAlignment="Left" Margin="304,464,0,0" VerticalAlignment="Top" Width="106" Height="20" Click="Car_Post_Click"/>
-        <Label Content="Isikukood" HorizontalAlignment="Left" Margin="12,51,0,0" VerticalAlignment="Top" Height="26" Width="62" Grid.Column="1"/>
-        <TextBox x:Name="txtIdCodeLookup" HorizontalAlignment="Left" Height="23" Margin="79,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" Grid.Column="1"/>
-        <Label Content="Eesnimi" HorizontalAlignment="Left" Margin="171,51,0,0" VerticalAlignment="Top" Height="26" Width="57" Grid.Column="1"/>
-        <TextBox x:Name="txtFirstnameLookup" HorizontalAlignment="Left" Height="23" Margin="228,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77" Grid.Column="1"/>
-        <Button Content="OTSI" HorizontalAlignment="Left" Margin="315,53,0,0" VerticalAlignment="Top" Width="40" Height="24" Click="Person_Search_Click" Grid.Column="1"/>
-        <Label Content="Autod" HorizontalAlignment="Left" Margin="10,242,0,0" VerticalAlignment="Top" FontSize="16" Height="31" Width="90" Grid.Column="1"/>
-        <Label Content="Numbrimärk" HorizontalAlignment="Left" Margin="12,276,0,0" VerticalAlignment="Top" Height="26" Width="81" Grid.Column="1" RenderTransformOrigin="0.5,0.5">
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0.114"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Label.RenderTransform>
-        </Label>
-        <TextBox x:Name="txtLicensePlateLookup" HorizontalAlignment="Left" Height="23" Margin="99,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" Grid.Column="1"/>
-        <Button Content="OTSI" HorizontalAlignment="Left" Margin="191,278,0,0" VerticalAlignment="Top" Width="38" Height="23" Click="Car_Search_Click" Grid.Column="1"/>
+        <Label Content="Muutmise korral täpsusta inimese ID:" HorizontalAlignment="Left" Margin="22,153,0,0" VerticalAlignment="Top" Height="26" Width="208"/>
+        <TextBox x:Name="txtUpdatePersonId" HorizontalAlignment="Left" Height="23" Margin="235,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
+        <Button Content="Muuda andmeid" HorizontalAlignment="Left" Margin="304,154,0,0" VerticalAlignment="Top" Width="106" Height="20" Click="Person_Put_Click"/>
+        <Label Content="Halda inimesi" HorizontalAlignment="Left" Margin="22,229,0,0" VerticalAlignment="Top" FontSize="16" Height="31" Width="109"/>
+        <Button Content="Eemalda aktiivsete nimekirjast" HorizontalAlignment="Left" Margin="119,306,0,0" VerticalAlignment="Top" Width="192" Height="20" Click="Person_Deactivate_Click"/>
+        <Label Content="ID:" HorizontalAlignment="Left" Margin="163,265,0,0" VerticalAlignment="Top" Height="26" Width="31"/>
+        <Button Content="Kustuta jäädavalt" HorizontalAlignment="Left" Margin="119,342,0,0" VerticalAlignment="Top" Width="192" Height="20" Click="Person_Delete_Click"/>
+        <TextBox x:Name="txtDeletePersonId" HorizontalAlignment="Left" Height="23" Margin="199,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
+        <Label Content="Lisa objekt" HorizontalAlignment="Left" Margin="22,379,0,0" VerticalAlignment="Top" FontSize="16" Height="31" Width="109"/>
+        <Label Content="Nimi" HorizontalAlignment="Left" Margin="22,420,0,0" VerticalAlignment="Top" Height="26" Width="85"/>
+        <TextBox x:Name="txtManufactureYear" HorizontalAlignment="Left" Height="23" Margin="112,423,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298"/>
+        <TextBox x:Name="txtCarBrand" HorizontalAlignment="Left" Height="23" Margin="112,451,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="101"/>
+        <Label Content="Aadress" HorizontalAlignment="Left" Margin="229,451,0,0" VerticalAlignment="Top" Height="26" Width="82"/>
+        <Label Content="Linn" HorizontalAlignment="Left" Margin="22,451,0,0" VerticalAlignment="Top" Height="26" Width="85"/>
+        <TextBox x:Name="txtLicensePlate" HorizontalAlignment="Left" Height="23" Margin="317,482,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="93"/>
+        <Label Content="Postikood" HorizontalAlignment="Left" Margin="229,479,0,0" VerticalAlignment="Top" Height="26" Width="78"/>
+        <TextBox x:Name="txtCarModel" HorizontalAlignment="Left" Height="23" Margin="317,454,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="93"/>
+        <Label Content="Vanusevahemik" HorizontalAlignment="Left" Margin="12,89,0,0" VerticalAlignment="Top" Height="26" Width="99" Grid.Column="1"/>
+        <TextBox x:Name="txtIdCodeLookup" HorizontalAlignment="Left" Height="23" Margin="155,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Grid.Column="1"/>
+        <Label Content="Nimi" HorizontalAlignment="Left" Margin="12,51,0,0" VerticalAlignment="Top" Height="26" Width="57" Grid.Column="1"/>
+        <TextBox x:Name="txtFirstnameLookup" HorizontalAlignment="Left" Height="23" Margin="69,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197" Grid.Column="1"/>
+        <Button Content="OTSI" HorizontalAlignment="Left" Margin="281,53,0,0" VerticalAlignment="Top" Width="74" Height="24" Click="Person_Search_Click" Grid.Column="1"/>
+        <Label Content="Objektid" HorizontalAlignment="Left" Margin="10,279,0,0" VerticalAlignment="Top" FontSize="16" Height="31" Width="90" Grid.Column="1"/>
         <ListBox ItemsSource="{Binding Cars}" HorizontalAlignment="Left" Height="180" Margin="10,315,0,0" VerticalAlignment="Top" Width="345" Grid.Column="1">
             <ListBox.ItemTemplate>
                 <DataTemplate>
@@ -86,8 +71,8 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <Label Content="Kuva inimesele kuuluvad autod" HorizontalAlignment="Left" Margin="10,513,0,0" VerticalAlignment="Top" FontSize="16" Height="31" Width="231" Grid.Column="1"/>
-        <Label Content="Inimese ID" HorizontalAlignment="Left" Margin="12,550,0,0" VerticalAlignment="Top" Height="26" Width="81" Grid.Column="1" RenderTransformOrigin="0.5,0.5">
+        <Label Content="Kuva objektil töötavad inimesed" HorizontalAlignment="Left" Margin="10,513,0,0" VerticalAlignment="Top" FontSize="16" Height="31" Width="240" Grid.Column="1"/>
+        <Label Content="Objekti ID" HorizontalAlignment="Left" Margin="12,550,0,0" VerticalAlignment="Top" Height="26" Width="81" Grid.Column="1" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -112,13 +97,31 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <Label Content="Muutmise korral täpsusta auto ID:" HorizontalAlignment="Left" Margin="22,497,0,0" VerticalAlignment="Top" Height="26" Width="208"/>
-        <TextBox x:Name="txtCarUpdateId" HorizontalAlignment="Left" Height="23" Margin="235,497,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
-        <Button Content="Muuda andmeid" HorizontalAlignment="Left" Margin="304,498,0,0" VerticalAlignment="Top" Width="106" Height="20" Click="Car_Put_Click"/>
-        <Label Content="Halda autosid" HorizontalAlignment="Left" Margin="22,539,0,0" VerticalAlignment="Top" FontSize="16" Height="31" Width="109"/>
-        <Label Content="ID:" HorizontalAlignment="Left" Margin="163,575,0,0" VerticalAlignment="Top" Height="26" Width="31"/>
-        <Button Content="Eemalda auto" HorizontalAlignment="Left" Margin="119,616,0,0" VerticalAlignment="Top" Width="192" Height="20" Click="Car_Remove_Click"/>
-        <TextBox x:Name="txtCarDeleteId" HorizontalAlignment="Left" Height="23" Margin="199,575,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
+        <Label Content="Muutmise korral täpsusta auto ID:" HorizontalAlignment="Left" Margin="22,549,0,0" VerticalAlignment="Top" Height="26" Width="208"/>
+        <TextBox x:Name="txtCarUpdateId" HorizontalAlignment="Left" Height="23" Margin="235,549,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
+        <Button Content="Muuda andmeid" HorizontalAlignment="Left" Margin="304,550,0,0" VerticalAlignment="Top" Width="106" Height="20" Click="Car_Put_Click"/>
+        <Label Content="Halda objekte" HorizontalAlignment="Left" Margin="22,643,0,0" VerticalAlignment="Top" FontSize="16" Height="31" Width="109"/>
+        <Label Content="Objekti ID" HorizontalAlignment="Left" Margin="24,674,0,0" VerticalAlignment="Top" Height="26" Width="66"/>
+        <Button Content="Eemalda objekt" HorizontalAlignment="Left" Margin="175,677,0,0" VerticalAlignment="Top" Width="106" Height="20" Click="Car_Remove_Click"/>
+        <TextBox x:Name="txtCarDeleteId" HorizontalAlignment="Left" Height="23" Margin="101,674,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
+        <Label Content="Min" HorizontalAlignment="Left" Margin="116,89,0,0" VerticalAlignment="Top" Height="26" Width="34" Grid.Column="1"/>
+        <Label Content="Max" HorizontalAlignment="Left" Margin="195,89,0,0" VerticalAlignment="Top" Height="26" Width="34" Grid.Column="1"/>
+        <TextBox x:Name="txtIdCodeLookup_Copy" HorizontalAlignment="Left" Height="23" Margin="234,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Grid.Column="1"/>
+        <Button Content="OTSI" HorizontalAlignment="Left" Margin="281,89,0,0" VerticalAlignment="Top" Width="74" Height="24" Click="Person_Search_Click" Grid.Column="1"/>
+        <Label Content="Roll" HorizontalAlignment="Left" Margin="22,115,0,0" VerticalAlignment="Top" Height="26" Width="59"/>
+        <RadioButton Content="Objektijuht" HorizontalAlignment="Left" Margin="86,121,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Tööline" HorizontalAlignment="Left" Margin="187,121,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Õpipoiss" HorizontalAlignment="Left" Margin="274,121,0,0" VerticalAlignment="Top"/>
+        <Label Content="Lisa objektile inimene" HorizontalAlignment="Left" Margin="22,580,0,0" VerticalAlignment="Top" FontSize="16" Height="31" Width="161"/>
+        <TextBox x:Name="txtCarBrand_Copy" HorizontalAlignment="Left" Height="23" Margin="112,482,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="101"/>
+        <Label Content="Riik" HorizontalAlignment="Left" Margin="22,482,0,0" VerticalAlignment="Top" Height="26" Width="85"/>
+        <TextBox x:Name="txtLicensePlate_Copy" HorizontalAlignment="Left" Height="23" Margin="112,516,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298"/>
+        <Label Content="Kirjeldus" HorizontalAlignment="Left" Margin="22,513,0,0" VerticalAlignment="Top" Height="26" Width="78"/>
+        <Label Content="Inimese ID" HorizontalAlignment="Left" Margin="26,611,0,0" VerticalAlignment="Top" Height="26" Width="74"/>
+        <TextBox x:Name="txtCarDeleteId_Copy" HorizontalAlignment="Left" Height="23" Margin="100,615,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
+        <Label Content="Objekti ID" HorizontalAlignment="Left" Margin="161,611,0,0" VerticalAlignment="Top" Height="26" Width="74"/>
+        <TextBox x:Name="txtCarDeleteId_Copy1" HorizontalAlignment="Left" Height="23" Margin="235,615,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
+        <Button Content="Lisa" HorizontalAlignment="Left" Margin="304,615,0,0" VerticalAlignment="Top" Width="106" Height="20" Click="Car_Remove_Click"/>
 
     </Grid>
 </Window>
